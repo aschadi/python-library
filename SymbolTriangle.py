@@ -1,8 +1,8 @@
 symbol = input('What symbol to use? ')
-nb_lines = input('How many lines? ')
+nb_lines = int(input('How many lines? '))
 
-for i in range(0, 10, 1):
-    for j in range(9, i, -1):
+for i in range(0, nb_lines, 1):
+    for j in range(nb_lines - 1, i, -1):
         print(' ', end='')
     for k in range(0, (2 * i) + 1, 1):
         print(symbol, end='')
